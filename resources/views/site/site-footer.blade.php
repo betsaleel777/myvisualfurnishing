@@ -24,8 +24,8 @@
                         <li><a class="cs-widget-link" href="#">Rembourssements et remplacements</a></li>
                         <li><a class="cs-widget-link" href="#">Suivit de commandes</a></li>
                         <li><a class="cs-widget-link" href="#">informations de livraison</a></li>
-                        <li><a class="cs-widget-link" href="#">Taxes &amp; fees</a></li>
-                        <li><a class="cs-widget-link" href="#">Informations</a></li>
+{{--                        <li><a class="cs-widget-link" href="#">Taxes &amp; fees</a></li>--}}
+{{--                        <li><a class="cs-widget-link" href="#">Informations</a></li>--}}
                     </ul>
                 </div>
             </div>
@@ -97,11 +97,11 @@
                 <div class="d-flex flex-wrap align-items-center mr-3">
                     <a class="d-block mr-grid-gutter mt-n1 mb-3" href="{{route('acceuil')}}" style="width: 108px;"><img src="{{asset('dist/img/logo/logo-footer.png')}}" alt="Around"/></a>
                     <ul class="list-inline font-size-sm pt-2 mb-3">
-                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">About</a></li>
-                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">Outlets</a></li>
-                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">Affiliates</a></li>
-                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">Support</a></li>
-                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">Terms of use</a></li>
+                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">A propos de nous</a></li>
+{{--                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">Outlets</a></li>--}}
+{{--                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">Affiliates</a></li>--}}
+                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">Support technique</a></li>
+                        <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="#">Terme d'utilisation</a></li>
                     </ul>
                 </div>
                 <div class="d-flex pt-2 pt-sm-0 ml-auto">

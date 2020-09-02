@@ -18,7 +18,7 @@
                 <img class="rounded" width="60" src="{{asset('dist/img/demo/shop-homepage/thumbnails/01.jpg')}}" alt="Product"/>
                 <div class="media-body pl-2 ml-1">
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="font-size-sm pr-1">Outdoor HD Cloud Security Camera</div>
+                    <div class="font-size-sm pr-1">Décoration et ameublement</div>
                     <i class="fe-chevron-right lead ml-2 mr-1"></i>
                   </div>
                 </div>
@@ -29,7 +29,7 @@
                 <img class="rounded" width="60" src="{{asset('dist/img/demo/shop-homepage/thumbnails/02.jpg')}}" alt="Product"/>
                 <div class="media-body pl-2 ml-1">
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="font-size-sm pr-1">Running Sneakers Sports Collection</div>
+                    <div class="font-size-sm pr-1">Compte prémium</div>
                     <i class="fe-chevron-right lead ml-2 mr-1"></i>
                   </div>
                 </div>
@@ -40,7 +40,7 @@
                 <img class="rounded" width="60" src="{{asset('dist/img/demo/shop-homepage/thumbnails/03.jpg')}}" alt="Product"/>
                 <div class="media-body pl-2 ml-1">
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="font-size-sm pr-1">Wireless Virtual Reality Headset</div>
+                    <div class="font-size-sm pr-1">Compte standard</div>
                     <i class="fe-chevron-right lead ml-2 mr-1"></i>
                   </div>
                 </div>
@@ -59,9 +59,9 @@
                 </div>
                 <div class="col-lg-6 order-lg-1 text-center text-lg-left">
                   <div class="pl-xl-5">
-                    <h2 class="h1 text-light">Outdoor HD Cloud Security Camera</h2>
-                    <p class="font-size-lg text-light mb-lg-5">Stay connected 24/7. Free trial for 30 days</p>
-                    <a class="btn btn-translucent-light" href="#">Get now - $45.00</a>
+                    <h2 class="h1 text-light">Décorez et meublez votre maison en 3D</h2>
+                    <p class="font-size-lg text-light mb-lg-5">Imprimer le devis de la décoration</p>
+                    <a class="btn btn-translucent-light" href="https://www.kozikaza.com/kazaplan/new">Commencez gratuitement!</a>
                   </div>
                 </div>
               </div>
@@ -75,9 +75,9 @@
                 </div>
                 <div class="col-lg-6 order-lg-1 text-center text-lg-left">
                   <div class="pl-xl-5">
-                    <h2 class="h1 text-light">Running Sneakers Sports Collection</h2>
-                    <p class="font-size-lg text-light mb-lg-5">Run like never before. Money back guarantee</p>
-                    <a class="btn btn-translucent-light" href="#">Get now - $99.00</a>
+                    <h2 class="h1 text-light">Vous êtes un décorateur d'intérieur proféssionel!</h2>
+                    <p class="font-size-lg text-light mb-lg-5">Créer un compte prémium pour accéder a des fonctionalités exclusives</p>
+                    <a class="btn btn-translucent-light" href="#">Commencer en prémium</a>
                   </div>
                 </div>
               </div>
@@ -90,9 +90,9 @@
                 </div>
                 <div class="col-lg-6 order-lg-1 text-center text-lg-left">
                   <div class="pl-xl-5">
-                    <h2 class="h1 text-light">Wireless Virtual Reality Headset</h2>
-                    <p class="font-size-lg text-light mb-lg-5">Run like never before. Money back guarantee</p>
-                    <a class="btn btn-translucent-light" href="#">Get now - $180.00</a>
+                    <h2 class="h1 text-light">Vous êtes néophite en décoration d'intérieur ?</h2>
+                    <p class="font-size-lg text-light mb-lg-5">Créer un compte pour sauvegarder vos plans.</p>
+                    <a class="btn btn-translucent-light" href="#">Créer un compte</a>
                   </div>
                 </div>
               </div>
@@ -108,28 +108,28 @@
       <div class="cs-carousel-inner" data-carousel-options="{&quot;items&quot;: 3, &quot;controls&quot;: false, &quot;gutter&quot;: 24, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;560&quot;:{&quot;items&quot;:2},&quot;850&quot;:{&quot;items&quot;:3}}}">
         <!-- Category-->
         <div class="pb-2">
-          <a class="card card-category box-shadow mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-right badge-success">From $8.99</span><img class="card-img-top" src="{{asset('dist/img/shop/categories/01.jpg')}}" alt="Clothing"/>
+          <a class="card card-category box-shadow mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-right badge-success">minimum $8.99</span><img class="card-img-top" src="{{asset('dist/img/shop/categories/01.jpg')}}" alt="Clothing"/>
             <div class="card-body">
               <h4 class="card-title">Bureau</h4>
             </div>
           </a></div>
         <!-- Category-->
         <div class="pb-2">
-          <a class="card card-category box-shadow mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-right badge-info">From $14.99</span><img class="card-img-top" src="{{asset('dist/img/shop/categories/02.jpg')}}" alt="Electronics"/>
+          <a class="card card-category box-shadow mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-right badge-info">minimum $14.99</span><img class="card-img-top" src="{{asset('dist/img/shop/categories/02.jpg')}}" alt="Electronics"/>
             <div class="card-body">
               <h4 class="card-title">Chambres</h4>
             </div>
           </a></div>
         <!-- Category-->
         <div class="pb-2">
-          <a class="card card-category box-shadow mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-right badge-danger">From $5.99</span><img class="card-img-top" src="{{asset('dist/img/shop/categories/03.jpg')}}" alt="Accessories"/>
+          <a class="card card-category box-shadow mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-right badge-danger">minimum $5.99</span><img class="card-img-top" src="{{asset('dist/img/shop/categories/03.jpg')}}" alt="accessories"/>
             <div class="card-body">
               <h4 class="card-title">Salons</h4>
             </div>
           </a></div>
         <!-- Category-->
         <div class="pb-2">
-          <a class="card card-category box-shadow mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-right badge-warning">From $7.99</span><img class="card-img-top" src="{{asset('dist/img/shop/categories/04.jpg')}}" alt="Kids"/>
+          <a class="card card-category box-shadow mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-right badge-warning">minimum $7.99</span><img class="card-img-top" src="{{asset('dist/img/shop/categories/04.jpg')}}" alt="Kids"/>
             <div class="card-body">
               <h4 class="card-title">Déco et équipement</h4>
             </div>
@@ -296,7 +296,7 @@
         </div>
       </div>
     </div>
-    <div class="text-center"><a class="btn btn-outline-primary" href="shop-ls.html">More products</a></div>
+    <div class="text-center"><a class="btn btn-outline-primary" href="shop-ls.html">plus d'articles</a></div>
   </section>
   <!-- New arrivals (widget) + Promo banner-->
   <section class="container pt-5 mt-3 mt-md-0 pt-md-6 pt-lg-7">
@@ -305,8 +305,8 @@
         <div class="card h-100 p-4">
           <div class="p-2">
             <div class="d-flex justify-content-between align-items-center mb-4 pb-1">
-              <h3 class="font-size-xl mb-0">New arrivals</h3><a class="font-size-sm font-weight-medium mr-n2" href="shop-ls.html">View
-              more<i class="fe-chevron-right font-size-lg ml-1"></i></a>
+              <h3 class="font-size-xl mb-0">New arrivals</h3><a class="font-size-sm font-weight-medium mr-n2" href="shop-ls.html">Voir
+              plus<i class="fe-chevron-right font-size-lg ml-1"></i></a>
             </div>
             <div class="media align-items-center pb-2 mb-1">
               <a class="d-block" href="#"><img class="rounded" width="60" src="{{asset('dist/img/demo/shop-homepage/thumbnails/04.jpg')}}" alt="Product"/></a>
@@ -343,23 +343,24 @@
         <div class="bg-secondary rounded-lg pt-5 px-3 pl-sm-5 pr-sm-2">
           <div class="d-sm-flex align-items-end text-center text-sm-left pl-2">
             <div class="mr-sm-n6 pb-5">
-              <h2 class="h1 text-sm-nowrap">Virtual Reality</h2>
-              <p class="pb-2 mx-auto mx-sm-0" style="max-width: 14rem;">Gadgets from top brands at discounted price</p>
-              <div class="d-inline-block bg-faded-danger text-danger font-size-sm font-weight-medium rounded-sm px-3 py-2">Limited time
-                offer
+              <h2 class="h1 text-sm-nowrap">Ma maisons en 3D</h2>
+              <p class="pb-2 mx-auto mx-sm-0" style="max-width: 14rem;">Apprennez à manipuler l'outils 3D.</p>
+              <div class="d-inline-block bg-faded-success text-success font-size-sm font-weight-medium rounded-sm px-3 py-2">voir
+                nos tutoriels
               </div>
-              <div class="cs-countdown pt-3 h4 justify-content-center justify-content-sm-start" data-countdown="10/01/2021 07:00:00 PM">
-                <div class="cs-countdown-days">
-                  <span class="cs-countdown-value">0</span><span class="cs-countdown-label font-size-xs text-muted">Days</span>
-                </div>
-                <div class="cs-countdown-hours">
-                  <span class="cs-countdown-value">0</span><span class="cs-countdown-label font-size-xs text-muted">Hours</span>
-                </div>
-                <div class="cs-countdown-minutes">
-                  <span class="cs-countdown-value">0</span><span class="cs-countdown-label font-size-xs text-muted">Mins</span>
-                </div>
-              </div>
-              <a class="btn btn-primary" href="#">Get one now</a>
+              <br><br>
+{{--              <div class="cs-countdown pt-3 h4 justify-content-center justify-content-sm-start" data-countdown="10/01/2021 07:00:00 PM">--}}
+{{--                <div class="cs-countdown-days">--}}
+{{--                  <span class="cs-countdown-value">0</span><span class="cs-countdown-label font-size-xs text-muted">Days</span>--}}
+{{--                </div>--}}
+{{--                <div class="cs-countdown-hours">--}}
+{{--                  <span class="cs-countdown-value">0</span><span class="cs-countdown-label font-size-xs text-muted">Hours</span>--}}
+{{--                </div>--}}
+{{--                <div class="cs-countdown-minutes">--}}
+{{--                  <span class="cs-countdown-value">0</span><span class="cs-countdown-label font-size-xs text-muted">Mins</span>--}}
+{{--                </div>--}}
+{{--              </div>--}}
+              <a class="btn btn-primary" href="#">lancer l'outils 3D</a>
             </div>
             <div><img src="{{asset('dist/img/demo/shop-homepage/banner.png')}}" alt="Promo banner"/>
             </div>
@@ -369,99 +370,99 @@
     </div>
   </section>
   <!-- Brands-->
-  <section class="container pt-5 mt-3 mt-md-0 pt-md-6 pt-lg-7 pb-md-4">
-    <h2 class="mb-5 text-center">Shop by brand</h2>
-    <div class="row">
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/01_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/01_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/02_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/02_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/03_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/03_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/04_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/04_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/05_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/05_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/06_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/06_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/07_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/07_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/08_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/08_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/09_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/09_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/10_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/10_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/11_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/11_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">
-        <div class="card-body px-1 py-0 text-center">
-          <div class="cs-swap-image">
-            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/12_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/12_gray.png')}}" alt="Brand logo"/>
-          </div>
-        </div>
-      </a></div>
-    </div>
-  </section>
+{{--  <section class="container pt-5 mt-3 mt-md-0 pt-md-6 pt-lg-7 pb-md-4">--}}
+{{--    <h2 class="mb-5 text-center">Acheter dans un magasin</h2>--}}
+{{--    <div class="row">--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/01_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/01_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/02_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/02_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/03_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/03_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/04_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/04_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/05_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/05_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/06_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/06_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/07_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/07_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/08_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/08_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/09_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/09_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/10_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/10_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/11_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/11_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 box-shadow card-hover py-3 py-sm-4" href="#">--}}
+{{--        <div class="card-body px-1 py-0 text-center">--}}
+{{--          <div class="cs-swap-image">--}}
+{{--            <img class="cs-swap-to" width="150" src="{{asset('dist/img/shop/brands/12_color.png')}}" alt="Brand logo"/><img class="cs-swap-from" width="150" src="{{asset('dist/img/shop/brands/12_gray.png')}}" alt="Brand logo"/>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </a></div>--}}
+{{--    </div>--}}
+{{--  </section>--}}
   <!-- Reviews-->
   <section class="bg-secondary py-5 py-md-6 mt-4 mt-md-5">
     <div class="container-fluid py-3 py-md-0">
-      <h2 class="mb-5 text-center">Trusted reviews</h2>
+      <h2 class="mb-5 text-center">Avis des Clients</h2>
       <div class="cs-carousel">
         <div class="cs-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16}, &quot;520&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 12}, &quot;860&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 23}, &quot;1080&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 23}, &quot;1380&quot;:{&quot;items&quot;:5, &quot;gutter&quot;: 23}, &quot;1600&quot;:{&quot;items&quot;:6, &quot;gutter&quot;: 23}}}">
           <!-- Review Card-->

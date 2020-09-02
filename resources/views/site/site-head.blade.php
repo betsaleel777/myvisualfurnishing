@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>{{$grand_titre}}</title>
     <!-- SEO Meta Tags-->
-    <meta name="description" content="myvirtualfurnishing aménagement et décoration d'intérieur de maison en 3D">
+    <meta name="description" content="babideco aménagement et décoration d'intérieur de maison en 3D">
     <meta name="keywords" content="maisons, décorations, intérieur, design, dessins 3D, maisons virtuelles, appartements décorations, maison décorations, appartement aménagement, maisons aménagement, ammeublement, meublé maisons, meublé appartement, meublé en 3D, meublé en 2D, plan de maison, ammeublement virtuel, ammeublement 3D, meubler en 3D, équiper salon en 3D, meubler appartement en 3D, meubler maison en 3D, design maison 3D, design appartement 3D, design 2D, design et décoration, design et ameublement de maison, design et ameublement de maison en 3D">
-    <meta name="author" content="virtualfurnishing">
+    <meta name="author" content="babideco">
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->

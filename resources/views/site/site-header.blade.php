@@ -127,7 +127,7 @@
           </div>
         </div>
         <div class="cs-offcanvas-cap d-block border-top px-4 mb-2">
-          <div class="d-flex justify-content-between mb-4"><span>Total:</span><span class="h6 mb-0">$776.99</span></div><a class="btn btn-primary btn-sm btn-block" href="checkout.html"><i class="fe-credit-card font-size-base mr-2"></i>Checkout</a>
+          <div class="d-flex justify-content-between mb-4"><span>Total:</span><span class="h6 mb-0">$776.99</span></div><a class="btn btn-primary btn-sm btn-block" href="checkout.html"><i class="fe-credit-card font-size-base mr-2"></i>procéder à une commande</a>
         </div>
       </div>
       <!-- Navbar (Solid background + shadow)-->
@@ -152,7 +152,7 @@
               <input class="form-control form-control-xl navbar-search-field" type="text" placeholder="Search site">
               <div class="d-none d-sm-block flex-shrink-0 pl-2 mr-4 border-left border-right" style="width: 10rem;">
                 <select class="form-control custom-select pl-2 pr-0">
-                  <option value="all">Toutes les catégories</option>
+                  <option value="all">Catégories</option>
                   <option value="clothing">Clothing</option>
                   <option value="shoes">Shoes</option>
                   <option value="electronics">Electronics</option>
