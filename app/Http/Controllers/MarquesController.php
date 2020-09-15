@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\File;
 
 class MarquesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $grand_titre = 'Marques';

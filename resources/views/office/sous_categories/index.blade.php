@@ -1,4 +1,7 @@
 @extends('layouts.office.default')
+@section('style')
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+@endsection
 @section('content')
     <!-- Header -->
     <!-- Header -->
@@ -38,7 +41,7 @@
                     </div>
                     <!-- Light table -->
                     <div class="table-responsive">
-                        <table class="table align-items-center table-flush">
+                        <table id="tableau" class="table align-items-center table-flush">
                             @empty($scategories->all())
                                 <tbody class="list">
                                 <tr>
@@ -66,7 +69,7 @@
                                             </div>
                                         </th>
                                         <td class="text-right">
-                                            <a class="btn btn-outline-primary" href="{{route('scategorie_edit',['categorie' => $categorie, 'id'=> $scategorie])}}">modifier</a>
+                                            <a class="btn btn-outline-primary" href="{{route('scategorie_edit',['id' => $scategorie->id, 'categorie' => $categorie->id])}}">modifier</a>
                                             <a class="btn btn-outline-danger" href="{{route('scategorie_delete',$scategorie)}}">supprimer</a>
                                         </td>
                                     </tr>
@@ -78,4 +81,13 @@
                 </div>
             </div>
         </div>
+@endsection
+@section('script')
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#tableau').DataTable();
+        } );
+    </script>
 @endsection

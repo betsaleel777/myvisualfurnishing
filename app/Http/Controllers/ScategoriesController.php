@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class ScategoriesController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(){
         $grand_titre = 'Sous Catégories' ;
         $scategories = Scategorie::with('categorie')->get() ;
@@ -23,13 +29,12 @@ class ScategoriesController extends Controller
 
     public function store(Request $request){
        $request->validate(Scategorie::RULES) ;
-       $categorie = Categorie::findOrFail($request->categorie) ;
        Scategorie::create($request->all()) ;
        $message = "la sous catégorie $request->nom a été crée avec succès!" ;
        return redirect()->route('categories')->with('success', $message) ;
     }
 
-    public function edit(int $id,int $categorie){
+    public function edit(int $categorie,int $id){
         $scategorie = Scategorie::findOrFail($id) ;
         $categorie_parent = Categorie::findOrFail($categorie) ;
         $grand_titre = 'Modifier '.$scategorie->nom ;
