@@ -12,7 +12,7 @@ class Categorie extends Model
      */
     protected $fillable = ['nom','image'] ;
     public const RULES = ['nom' => 'required|max:70',
-                          'image' => 'max:255'
+                          'image' => 'mimes:jpeg,jpg,png|dimensions:width=518,height=412'
                          ] ;
 
     public function enfants(){

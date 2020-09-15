@@ -131,6 +131,7 @@
 <script src="{{asset('dist/vendor/tiny-slider/dist/min/tiny-slider.js')}}"></script>
 <!-- Main theme script-->
 <script src="{{asset('dist/js/theme.min.js')}}"></script>
+<script src="{{asset('js/app.js')}}"></script>
 @yield('script')
 </body>
 </html>

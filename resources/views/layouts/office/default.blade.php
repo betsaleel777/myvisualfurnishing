@@ -1,6 +1,6 @@
 @include('layouts.head')
 @include('layouts.side')
 @include('layouts.header')
-{{--inclure flash ici--}}
+@include('flash')
 @yield('content')
 @include('layouts.footer')
