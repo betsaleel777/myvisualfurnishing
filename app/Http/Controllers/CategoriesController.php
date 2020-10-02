@@ -52,7 +52,7 @@ class CategoriesController extends Controller
 
     public function update(Request $request)
     {
-      $data = $request->validate(Categorie::RULES);
+        $request->validate(Categorie::RULES);
         $categorie = Categorie::findOrFail($request->categorie);
         $categorie->nom = $request->nom;
         if ($request->hasFile('image')) {

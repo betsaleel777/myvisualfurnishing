@@ -16,7 +16,7 @@ class CreateMagasins extends Migration
         Schema::create('magasins', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('nom', 70) ;
+            $table->string('nom_magasin', 70) ;
             $table->string('lieu',170) ;
             $table->unsignedTinyInteger('confiance')->nullable() ;
             $table->unsignedBigInteger('enseigne')->index() ;

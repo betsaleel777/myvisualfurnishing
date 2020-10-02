@@ -31,9 +31,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="{{route('scategories')}}">
+                    <a class="nav-link" href="{{route('enseignes')}}">
                             <i class="ni ni-single-02 text-yellow"></i>
-                            <span class="nav-link-text">profile</span>
+                            <span class="nav-link-text">Enseignes</span>
                         </a>
                     </li>
                     <li class="nav-item">
