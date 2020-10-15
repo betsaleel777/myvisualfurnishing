@@ -1,7 +1,8 @@
 @include('site.site-head')
-@include('site.site-header')
 <div id="panel">
-   @include('flash')
-   @yield('content')
+    @include('site.site-header')
+    @include('flash')
+    @yield('content')
+    @include('site.site-footer')
 </div>
-@include('site.site-footer')
+@include('site.site-scripts')

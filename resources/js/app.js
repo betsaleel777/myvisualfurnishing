@@ -6,10 +6,11 @@
 
 require("./bootstrap");
 
-import Vue from "vue";
-import VueAWN from "vue-awesome-notifications";
-import NotificationsUser from "./components/NotificationsUser.vue";
-import ButtonsMag from "./components/ButtonsMag.vue";
+import Vue from "vue"
+import VueAWN from "vue-awesome-notifications"
+import NotificationsUser from "./components/NotificationsUser.vue"
+import NewsletterField from "./components/Newsletter.vue"
+import ButtonsMag from "./components/ButtonsMag.vue"
 const options = {
     position: "bottom-left",
     maxNotifications: 5
@@ -35,7 +36,8 @@ Vue.use(VueAWN, options);
 const app = new Vue({
     components: {
         NotificationsUser,
-        ButtonsMag
+        ButtonsMag,
+        NewsletterField
     },
     el: "#panel"
 });

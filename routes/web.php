@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Auth::routes();
@@ -9,6 +10,7 @@ Route::prefix('frontal')->group(
     function () {
         Route::get('/', 'FrontController@index')->name('welcome');
         Route::get('/shop-single', 'FrontController@single')->name('shop-single');
+        Route::post('/newsletter/store', 'NewslettersController@store')->name('newsletter_store');
     }
 );
 
@@ -38,6 +40,18 @@ Route::prefix('office')->group(
                 Route::post('/update', 'CategoriesController@update')->name('categorie_update');
                 Route::get('/delete/{id}', 'CategoriesController@delete')->name('categorie_delete');
                 Route::get('/show/{id}', 'CategoriesController@show')->name('categorie_show');
+            }
+        );
+
+        Route::prefix('produits')->group(
+            function () {
+                Route::get('/', 'ProduitsController@index')->name('produits');
+                Route::get('/add', 'ProduitsController@add')->name('produit_add');
+                Route::post('/store', 'ProduitsController@store')->name('produit_store');
+                Route::get('/edit/{id}', 'ProduitsController@edit')->name('produit_edit');
+                Route::post('/update', 'ProduitsController@update')->name('produit_update');
+                Route::get('/delete/{id}', 'ProduitsController@delete')->name('produit_delete');
+                Route::get('/show/{id}', 'ProduitsController@show')->name('produit_show');
             }
         );
 
