@@ -4,13 +4,12 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require("./bootstrap");
-
-import Vue from "vue"
-import VueAWN from "vue-awesome-notifications"
-import NotificationsUser from "./components/NotificationsUser.vue"
-import NewsletterField from "./components/Newsletter.vue"
-import ButtonsMag from "./components/ButtonsMag.vue"
+import "./bootstrap.js";
+import Vue from "vue";
+import VueAWN from "vue-awesome-notifications";
+import NotificationsUser from "./components/NotificationsUser.vue";
+import ButtonsMag from "./components/ButtonsMag.vue";
+import NewsletterField from "./components/Newsletter.vue";
 const options = {
     position: "bottom-left",
     maxNotifications: 5
@@ -33,7 +32,7 @@ Vue.use(VueAWN, options);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
+new Vue({
     components: {
         NotificationsUser,
         ButtonsMag,

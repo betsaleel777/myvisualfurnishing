@@ -27,7 +27,6 @@
 
 <script>
 export default {
-    name: "newsletter-field",
     data() {
         return {
             message: "",

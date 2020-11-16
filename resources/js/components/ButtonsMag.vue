@@ -72,7 +72,6 @@
 
 <script>
 export default {
-    name: "buttons-mag",
     props: {
         magasin: Number
     },
@@ -88,9 +87,8 @@ export default {
     },
     methods: {
         islinked() {
-            console.log("test liaison exécuté");
             axios
-                .get("/api/magasin/liaisons/" + magasin)
+                .get("/api/magasin/liaisons/" + this.magasin)
                 .then(result => {})
                 .catch(err => {});
             // this.message = `la suppression de ce magasin implique celle des produits qui s'y trouvent.Voulez vous

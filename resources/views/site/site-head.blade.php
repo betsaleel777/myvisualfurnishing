@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
-    <title>{{$grand_titre}}</title>
+    <title>{{ $grand_titre }}</title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="babideco aménagement et décoration d'intérieur de maison en 3D">
-    <meta name="keywords" content="maisons, décorations, intérieur, design, dessins 3D, maisons virtuelles, appartements décorations, maison décorations, appartement aménagement, maisons aménagement, ammeublement, meublé maisons, meublé appartement, meublé en 3D, meublé en 2D, plan de maison, ammeublement virtuel, ammeublement 3D, meubler en 3D, équiper salon en 3D, meubler appartement en 3D, meubler maison en 3D, design maison 3D, design appartement 3D, design 2D, design et décoration, design et ameublement de maison, design et ameublement de maison en 3D">
+    <meta name="keywords"
+        content="maisons, décorations, intérieur, design, dessins 3D, maisons virtuelles, appartements décorations, maison décorations, appartement aménagement, maisons aménagement, ammeublement, meublé maisons, meublé appartement, meublé en 3D, meublé en 2D, plan de maison, ammeublement virtuel, ammeublement 3D, meubler en 3D, équiper salon en 3D, meubler appartement en 3D, meubler maison en 3D, design maison 3D, design appartement 3D, design 2D, design et décoration, design et ameublement de maison, design et ameublement de maison en 3D">
     <meta name="author" content="babideco">
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('dist/apple-touch-icon.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('dist/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('dist/favicon-16x16.png')}}">
-    <link rel="manifest" href="{{asset('dist/site.webmanifest')}}">
-    <link rel="mask-icon" color="#5bbad5" href="{{asset('dist/safari-pinned-tab.svg')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('dist/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('dist/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('dist/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('dist/site.webmanifest') }}">
+    <link rel="mask-icon" color="#5bbad5" href="{{ asset('dist/safari-pinned-tab.svg') }}">
     <meta name="msapplication-TileColor" content="#766df4">
     <meta name="theme-color" content="#ffffff">
     <!-- Page loading styles-->
@@ -53,11 +55,11 @@
             opacity: 0;
         }
 
-        .cs-page-loading.active > .cs-page-loading-inner {
+        .cs-page-loading.active>.cs-page-loading-inner {
             opacity: 1;
         }
 
-        .cs-page-loading-inner > span {
+        .cs-page-loading-inner>span {
             display: block;
             font-family: 'Inter', sans-serif;
             font-size: 1rem;
@@ -95,11 +97,11 @@
     </style>
     <!-- Page loading scripts-->
     <script>
-        (function () {
-            window.onload = function () {
+        (function() {
+            window.onload = function() {
                 var preloader = document.querySelector('.cs-page-loading');
                 preloader.classList.remove('active');
-                setTimeout(function () {
+                setTimeout(function() {
                     preloader.remove();
                 }, 2000);
             };
@@ -107,10 +109,9 @@
 
     </script>
     <!-- Vendor Styles-->
-    <link rel="stylesheet" media="screen" href="{{asset('dist/vendor/simplebar/dist/simplebar.min.css')}}"/>
-    <link rel="stylesheet" media="screen" href="{{asset('dist/vendor/tiny-slider/dist/tiny-slider.css')}}"/>
+    <link rel="stylesheet" media="screen" href="{{ asset('dist/vendor/simplebar/dist/simplebar.min.css') }}" />
+    <link rel="stylesheet" media="screen" href="{{ asset('dist/vendor/tiny-slider/dist/tiny-slider.css') }}" />
     <!-- Main Theme Styles + Bootstrap-->
-    <link rel="stylesheet" media="screen" href="{{asset('dist/css/theme.min.css')}}">
+    <link rel="stylesheet" media="screen" href="{{ asset('dist/css/theme.min.css') }}">
     @yield('style')
 </head>
-

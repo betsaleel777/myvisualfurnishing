@@ -19,8 +19,8 @@ class CreateTableProduits extends Migration
             $table->unsignedInteger('prix');
             $table->unsignedInteger('prix_solde')->nullable();
             $table->string('main_image', 255);
-            $table->string('shodai', 255);
-            $table->string('nidaime', 255);
+            $table->string('shodai', 255)->nullable();
+            $table->string('nidaime', 255)->nullable();
             $table->string('sandaime', 255)->nullable();
             $table->unsignedBigInteger('marque')->nullable();
             $table->unsignedBigInteger('magasin');
