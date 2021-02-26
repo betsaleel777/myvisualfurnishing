@@ -63,10 +63,10 @@
                      <div class="col-md-12">
                         <div class="form-group">
                            <label class="form-control-label" for="marque">Marque du produit</label>
-                           <select id="marque" name="marque" class="form-control @error('marque') is-invalid @enderror"
-                              placeholder="choisir une marque ..." type="text">
+                           <select id="marque" name="marque" class="form-control @error('marque') is-invalid @enderror" type="text">
+                              <option default>choisir une marque ...</option>
                               @foreach ($marques as $id => $nom)
-                                 <option @php in_array(old('marque'),$marques)??'selected' @endphp value="{{ $id }}">{{ $nom }}</option>
+                                 <option value="{{ $id }}">{{ $nom }}</option>
                               @endforeach
                              </select>
                              @error('marque') <div class="text-danger">{{ $message }}</div>@enderror
@@ -75,10 +75,10 @@
                   <div class="col-md-12">
                      <div class="form-group">
                         <label class="form-control-label" for="magasin">Magasin du produit</label>
-                        <select id="magasin" name="magasin" class="form-control @error('magasin') is-invalid @enderror"
-                           placeholder="choisir une magasin ..." type="text">
+                        <select id="magasin" name="magasin" class="form-control @error('magasin') is-invalid @enderror" type="text">
+                           <option default>choisir un magasin ...</option>
                            @foreach ($magasins as $id => $nom_magasin)
-                              <option @php in_array(old('magasin'),$magasins)??'selected' @endphp value="{{ $id }}">{{ $nom_magasin }}</option>
+                              <option value="{{ $id }}">{{ $nom_magasin }}</option>
                            @endforeach
                            </select>
                            @error('magasin') <div class="text-danger">{{ $message }}</div>@enderror

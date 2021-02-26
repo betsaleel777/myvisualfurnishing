@@ -18,6 +18,18 @@ class Produit extends Model
         'statut' => 'nullable|max:50',
     ];
 
+    public const EDIT_RULES = [
+        'nom' => 'required',
+        'prix' => 'required|numeric',
+        'prix_solde' => 'nullable|numeric',
+        'magasin' => 'required',
+        'main_image' => 'nullable|mimes:jpeg,jpg,png|dimensions:max_width=900,max_height=900',
+        'shodai' => 'nullable|mimes:jpeg,jpg,png|dimensions:max_width=900,max_height=900',
+        'nidaime' => 'nullable|mimes:jpeg,jpg,png|dimensions:max_width=900,max_height=900',
+        'sandaime' => 'nullable|mimes:jpeg,jpg,png|dimensions:max_width=900,max_height=900',
+        'statut' => 'nullable|max:50',
+    ];
+
     public function magasinLinked()
     {
         return $this->belongsTo(Magasin::class, 'magasin');

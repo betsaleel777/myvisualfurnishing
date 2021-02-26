@@ -1965,21 +1965,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     magasin: Number
@@ -38391,7 +38376,7 @@ var render = function() {
         },
         on: { click: _vm.islinked }
       },
-      [_vm._v("\n        supprimer\n    ")]
+      [_vm._v("\n\t\tsupprimer\n\t")]
     ),
     _vm._v(" "),
     _c(
@@ -38427,15 +38412,15 @@ var render = function() {
                     _vm._v(" "),
                     _c("h4", { staticClass: "heading mt-4" }, [
                       _vm._v(
-                        "\n                            A lire attentivement !!\n                        "
+                        "\n\t\t\t\t\t\t\tA lire attentivement !!\n\t\t\t\t\t\t"
                       )
                     ]),
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
-                        "\n                            " +
+                        "\n\t\t\t\t\t\t\t" +
                           _vm._s(_vm.message) +
-                          "\n                        "
+                          "\n\t\t\t\t\t\t"
                       )
                     ])
                   ])
@@ -38462,11 +38447,7 @@ var staticRenderFns = [
           staticClass: "modal-title",
           attrs: { id: "modal-title-notification" }
         },
-        [
-          _vm._v(
-            "\n                        Gardez l'oeil ouvert\n                    "
-          )
-        ]
+        [_vm._v("\n\t\t\t\t\t\tGardez l'oeil ouvert\n\t\t\t\t\t")]
       ),
       _vm._v(" "),
       _c(
@@ -38491,7 +38472,7 @@ var staticRenderFns = [
       _c(
         "button",
         { staticClass: "btn btn-white", attrs: { type: "button" } },
-        [_vm._v("\n                        confirmer\n                    ")]
+        [_vm._v("\n\t\t\t\t\t\tconfirmer\n\t\t\t\t\t")]
       ),
       _vm._v(" "),
       _c(
@@ -38500,7 +38481,7 @@ var staticRenderFns = [
           staticClass: "btn btn-link text-white ml-auto",
           attrs: { type: "button", "data-dismiss": "modal" }
         },
-        [_vm._v("\n                        abandonner\n                    ")]
+        [_vm._v("\n\t\t\t\t\t\tabandonner\n\t\t\t\t\t")]
       )
     ])
   }

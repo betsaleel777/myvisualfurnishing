@@ -13,7 +13,8 @@
                   <h6 class="h2 text-white d-inline-block mb-0">Produits</h6>
                   <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                      <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                        <li class="breadcrumb-item"><a href="{{ route('produits') }}"><i class="fas fa-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('produits') }}"><i class="fas fa-home"></i></a>
+                        </li>
                         <li class="breadcrumb-item active" aria-current="page">Produits</li>
                      </ol>
                   </nav>
@@ -68,7 +69,8 @@
                                     <div class="media align-items-center">
                                        @empty($produit->main_image)
                                           <a href="#" class="avatar rounded-circle mr-3">
-                                             <img alt="{{ $produit->nom }}" src="{{ asset('web/images/produits/default.png') }}">
+                                             <img alt="{{ $produit->nom }}"
+                                                src="{{ asset('web/images/produits/default.png') }}">
                                           </a>
                                           <div class="media-body">
                                              <span class="name mb-0 text-sm">{{ $produit->nom }}</span>
@@ -88,11 +90,11 @@
                                  <td>{{ $produit->marqueLinked->nom }}</td>
                                  <td>{{ $produit->magasinLinked->nom_magasin }}</td>
                                  <td class="text-right">
-                                   <a class="btn btn-outline-warning"
-                                      href="{{ route('produit_show', $produit) }}">détails</a>
-                                    <a class="btn btn-outline-primary"
+                                    <a class="btn btn-outline-warning btn-sm"
+                                       href="{{ route('produit_show', $produit) }}">détails</a>
+                                    <a class="btn btn-outline-primary btn-sm"
                                        href="{{ route('produit_edit', $produit) }}">modifier</a>
-                                    <a class="btn btn-outline-danger"
+                                    <a class="btn btn-outline-danger btn-sm"
                                        href="{{ route('produit_delete', $produit) }}">supprimer</a>
                                  </td>
                               </tr>

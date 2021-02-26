@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <hr class="my-4" />
-                <!-- Liste magasins -->
+                <!-- Liste des images-->
                 <div class="container">
                     <div class="row">
                         <div class="col">
