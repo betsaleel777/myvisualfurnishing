@@ -63,8 +63,8 @@ export default {
 	data() {
 		return {
 			variant: {
-				first: "modal-primary",
-				second: "bg-gradient-primary",
+				first: { "modal-primary": true },
+				second: { "bg-gradient-primary": true },
 			},
 			message: `la suppression de ce magasin est sans danger car aucun produit associé n'as été trouvé.
                       l'utilisateur relié à ce compte magasin sera néanmoins supprimé.`,

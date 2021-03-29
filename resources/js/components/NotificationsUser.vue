@@ -1,26 +1,20 @@
 <template> </template>
 
 <script>
+import { onMounted } from "@vue/composition-api"
+import { notifier } from "../composition/notify"
 export default {
 	props: {
-		message: String,
 		variant: String,
-	},
-	mounted() {
-		this.notificationCall()
-	},
-	methods: {
-		notificationCall() {
-			if (this.variant === "success") {
-				this.$awn.success(this.message)
-			} else if (this.variant === "danger") {
-				this.$awn.alert(this.message)
-			} else if (this.variant === "warning") {
-				this.$awn.warning(this.message)
-			} else if (this.variant === "info") {
-				this.$awn.info(this.message)
-			}
+		message: {
+			type: String,
+			required: true,
 		},
+	},
+	setup(props) {
+		onMounted(() => {
+			notifier(props.variant, props.message)
+		})
 	},
 }
 </script>

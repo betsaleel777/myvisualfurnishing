@@ -15,26 +15,16 @@
 </template>
 
 <script>
+import { ref } from "@vue/composition-api"
+import { useAddNewsletter } from "../composition/addNewsletter"
 export default {
-	data() {
+	setup(props) {
+		let email = ref("")
+		const { courriel, sendMail } = useAddNewsletter(email)
 		return {
-			message: "",
-			email: "",
+			email: courriel,
+			sendMail,
 		}
-	},
-	methods: {
-		sendMail() {
-			axios
-				.post("/frontal/newsletter/store", { email: this.email })
-				.then(result => {
-					this.$awn.success(result.data.message)
-					this.email = ""
-				})
-				.catch(err => {
-					this.message = err.response.data.errors.email[0]
-					this.$awn.alert(this.message)
-				})
-		},
 	},
 }
 </script>
