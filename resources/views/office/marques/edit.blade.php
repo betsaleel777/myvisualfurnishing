@@ -47,8 +47,11 @@
                         <div class="form-group">
                            <a href="#" class="avatar avatar-lg rounded-circle" data-toggle="tooltip"
                               data-original-title="{{ $marque->nom }}">
-                              <img alt="{{ $marque->nom }}"
-                                 src="{{ asset('web/images/marques') . '/' . $marque->logo }}">
+                              @if (!empty($marque->logo))
+                                 <img alt="{{ $marque->nom }}" src="{{ asset('/storage') . '/' . $marque->logo }}">
+                              @else
+                                 <img alt="{{ $marque->nom }}" src="{{ asset('/storage/default/default.png') }}">
+                              @endif
                            </a>
                         </div>
                      </div>

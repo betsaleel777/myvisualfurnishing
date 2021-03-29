@@ -69,7 +69,7 @@
                                     <div class="media align-items-center">
                                        @empty($enseigne->logo)
                                           <a href="#" class="avatar rounded-circle mr-3">
-                                             <img alt="default" src="{{ asset('web/images/marques/default.png') }}">
+                                             <img alt="default" src="{{ asset('/storage/default/default.png') }}">
                                           </a>
                                           <div class="media-body">
                                              <span class="name mb-0 text-sm">{{ $enseigne->nom }}</span>
@@ -77,7 +77,7 @@
                                        @else
                                           <a href="#" class="avatar rounded-circle mr-3">
                                              <img alt="{{ $enseigne->nom }}"
-                                                src="{{ asset('web/images/marques') . '/' . $enseigne->logo }}">
+                                                src="{{ asset('/storage') . '/' . $enseigne->logo }}">
                                           </a>
                                           <div class="media-body">
                                              <span class="name mb-0 text-sm">{{ $enseigne->nom }}</span>

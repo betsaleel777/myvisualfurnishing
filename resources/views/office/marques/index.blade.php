@@ -66,16 +66,14 @@
                                     <div class="media align-items-center">
                                        @empty($marque->logo)
                                           <a href="#" class="avatar rounded-circle mr-3">
-                                             <img alt="{{ $marque->nom }}"
-                                                src="{{ asset('web/images/marques/default.png') }}">
+                                             <img alt="{{ $marque->nom }}" src="{{ asset('/storage/default/default.png') }}">
                                           </a>
                                           <div class="media-body">
                                              <span class="name mb-0 text-sm">{{ $marque->nom }}</span>
                                           </div>
                                        @else
                                           <a href="#" class="avatar rounded-circle mr-3">
-                                             <img alt="{{ $marque->nom }}"
-                                                src="{{ asset('web/images/marques') . '/' . $marque->logo }}">
+                                             <img alt="{{ $marque->nom }}" src="{{ url('/storage') . '/' . $marque->logo }}">
                                           </a>
                                           <div class="media-body">
                                              <span class="name mb-0 text-sm">{{ $marque->nom }}</span>

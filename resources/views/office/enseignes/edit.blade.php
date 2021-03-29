@@ -86,12 +86,11 @@
                         <div class="form-group">
                            @empty($enseigne->logo)
                               <a href="#" class="avatar rounded-circle mr-3">
-                                 <img alt="default" src="{{ asset('web/images/marques/default.png') }}">
+                                 <img alt="default" src="{{ asset('/storage/default/default.png') }}">
                               </a>
                            @else
                               <a href="#" class="avatar rounded-circle mr-3">
-                                 <img alt="{{ $enseigne->nom }}"
-                                    src="{{ asset('web/images/marques') . '/' . $enseigne->logo }}">
+                                 <img alt="{{ $enseigne->nom }}" src="{{ asset('/storage') . '/' . $enseigne->logo }}">
                               </a>
                            @endempty
                         </div>

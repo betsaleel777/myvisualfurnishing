@@ -70,7 +70,7 @@
                                        @empty($produit->main_image)
                                           <a href="#" class="avatar rounded-circle mr-3">
                                              <img alt="{{ $produit->nom }}"
-                                                src="{{ asset('web/images/produits/default.png') }}">
+                                                src="{{ asset('/storage/default/default.png') }}">
                                           </a>
                                           <div class="media-body">
                                              <span class="name mb-0 text-sm">{{ $produit->nom }}</span>
@@ -78,7 +78,7 @@
                                        @else
                                           <a href="#" class="avatar rounded-circle mr-3">
                                              <img alt="{{ $produit->nom }}"
-                                                src="{{ asset('web/images/produits') . '/' . $produit->main_image }}">
+                                                src="{{ asset('/storage') . '/' . $produit->main_image }}">
                                           </a>
                                           <div class="media-body">
                                              <span class="name mb-0 text-sm">{{ $produit->nom }}</span>

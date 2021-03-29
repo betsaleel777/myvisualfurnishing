@@ -6,6 +6,8 @@ use App\Magasin;
 use App\Marque;
 use App\Produit;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class ProduitsController extends Controller
 {
@@ -31,27 +33,23 @@ class ProduitsController extends Controller
         $produit = new Produit($request->except('main_image', 'shodai', 'nidaime', 'sandaime'));
         // dd($produit);
         if ($request->hasFile('main_image')) {
-            $imageName = 'main'.time() . '.' . $request->main_image->extension();
-            $request->main_image->move(public_path('web/images/produits'), $imageName);
-            $produit->main_image = $imageName;
+            $path = Storage::putFile('public/produits', $request->file('main_image'));
+            $produit->main_image = Str::substr($path, 7);
         }
         if ($request->hasFile('shodai')) {
-            $imageName = 'shod'.time() . '.' . $request->shodai->extension();
-            $request->shodai->move(public_path('web/images/produits'), $imageName);
-            $produit->shodai = $imageName;
+            $path = Storage::putFile('public/produits', $request->file('shodai'));
+            $produit->shodai = Str::substr($path, 7);
         }
         if ($request->hasFile('nidaime')) {
-            $imageName = 'nida'.time() . '.' . $request->nidaime->extension();
-            $request->nidaime->move(public_path('web/images/produits'), $imageName);
-            $produit->nidaime = $imageName;
+            $path = Storage::putFile('public/produits', $request->file('nidaime'));
+            $produit->nidaime = Str::substr($path, 7);
         }
         if ($request->hasFile('sandaime')) {
-            $imageName = 'sand'.time() . '.' . $request->sandaime->extension();
-            $request->sandaime->move(public_path('web/images/produits'), $imageName);
-            $produit->sandaime = $imageName;
+            $path = Storage::putFile('public/produits', $request->file('sandaime'));
+            $produit->sandaime = Str::substr($path, 7);
         }
-        if($request->livrable === 'on') {
-            $produit->livrable = true ;
+        if ($request->livrable === 'on') {
+            $produit->livrable = true;
         }
         $produit->save();
         $message = "le produit $request->nom a été crée avec succès !";
@@ -60,60 +58,59 @@ class ProduitsController extends Controller
 
     public function edit(int $id)
     {
-        $produit = Produit::with('magasinLinked','marqueLinked')->find($id) ;
+        $produit = Produit::with('magasinLinked', 'marqueLinked')->find($id);
         $magasins = Magasin::get()->pluck('nom_magasin', 'id')->all();
         $marques = Marque::get()->pluck('nom', 'id')->all();
-        $grand_titre = 'Modifier '.$produit->nom ;
-        return view('office.produits.edit', compact('grand_titre', 'produit','marques','magasins'));
+        $grand_titre = 'Modifier ' . $produit->nom;
+        return view('office.produits.edit', compact('grand_titre', 'produit', 'marques', 'magasins'));
     }
 
     public function update(Request $request)
     {
         $produit = Produit::find($request->produit);
         $request->validate(Produit::EDIT_RULES);
-        $produit->nom = $request->nom ;
-        $produit->prix = $request->prix ;
-        $produit->prix_solde = $request->prix_solde ;
-        $produit->marque = $request->marque ;
-        $produit->magasin = $request->magasin ;
-        $produit->description = $request->description ;
-        $produit->livrable = $request->livrable ;
+        $produit->nom = $request->nom;
+        $produit->prix = $request->prix;
+        $produit->prix_solde = $request->prix_solde;
+        $produit->marque = $request->marque;
+        $produit->magasin = $request->magasin;
+        $produit->description = $request->description;
+        $produit->livrable = $request->livrable;
 
         //modification des images
         if ($request->hasFile('main_image')) {
-            $request->main_image->delete(public_path('web/images/produits'), $request->main_image);
-            $imageName = time() . '.' . $request->main_image->extension();
-            $request->main_image->move(public_path('web/images/produits'), $imageName);
-            $produit->main_image = $imageName;
+            Storage::delete('public/' . $produit->main_image);
+            $path = Storage::putFile('public/produits', $request->file('main_image'));
+            $produit->main_image = Str::substr($path, 7);
         }
         if ($request->hasFile('shodai')) {
-            $request->shodai->delete(public_path('web/images/produits'), $request->shodai);
-            $imageName = time() . '.' . $request->shodai->extension();
-            $request->shodai->move(public_path('web/images/produits'), $imageName);
-            $produit->shodai = $imageName;
+            Storage::delete('public/' . $produit->shodai);
+            $path = Storage::putFile('public/produits', $request->file('shodai'));
+            $produit->shodai = Str::substr($path, 7);
         }
         if ($request->hasFile('nidaime')) {
-            $request->nidaime->delete(public_path('web/images/produits'), $request->nidaime);
-            $imageName = time() . '.' . $request->nidaime->extension();
-            $request->nidaime->move(public_path('web/images/produits'), $imageName);
-            $produit->nidaime = $imageName;
+            Storage::delete('public/' . $produit->nidaime);
+            $path = Storage::putFile('public/produits', $request->file('nidaime'));
+            $produit->nidaime = Str::substr($path, 7);
         }
         if ($request->hasFile('sandaime')) {
-            $request->sandaime->delete(public_path('web/images/produits'), $request->sandaime);
-            $imageName = time() . '.' . $request->sandaime->extension();
-            $request->sandaime->move(public_path('web/images/produits'), $imageName);
-            $produit->sandaime = $imageName;
+            Storage::delete('public/' . $produit->sandaime);
+            $path = Storage::putFile('public/produits', $request->file('sandaime'));
+            $produit->sandaime = Str::substr($path, 7);
         }
-        $produit->save() ;
+        if ($request->livrable === 'on') {
+            $produit->livrable = true;
+        }
+        $produit->save();
         $message = "Produit modifié avec succès";
-        return redirect()->route('produits')->with('success',$message)->withErrors($request->all()) ;
+        return redirect()->route('produits')->with('success', $message)->withErrors($request->all());
     }
 
-    function show(int $id)
+    public function show(int $id)
     {
         $produit = Produit::with('magasinLinked', 'marqueLinked')->find($id);
-        $grand_titre = 'Détails '.$produit->nom ;
-        return view('office.produits.show',compact('produit','grand_titre')) ;
+        $grand_titre = 'Détails ' . $produit->nom;
+        return view('office.produits.show', compact('produit', 'grand_titre'));
     }
 
     public function delete(int $id)

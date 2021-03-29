@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Categorie;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File;
-
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class CategoriesController extends Controller
 {
@@ -30,13 +30,12 @@ class CategoriesController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->validate(Categorie::RULES);
+        $request->validate(Categorie::RULES);
         $categorie = new Categorie();
-        $categorie->nom = $request->nom ;
+        $categorie->nom = $request->nom;
         if ($request->hasFile('image')) {
-            $imageName = time() . '.' . $request->image->extension();
-            $request->image->move(public_path('web/images/categories'), $imageName);
-            $categorie->image = $imageName;
+            $path = Storage::putFile('public/categories', $request->file('image'));
+            $categorie->image = Str::substr($path, 7);
         }
         $categorie->save();
         $message = 'la categorie ' . $request->nom . 'a été enregistré avec succès';
@@ -56,30 +55,30 @@ class CategoriesController extends Controller
         $categorie = Categorie::findOrFail($request->categorie);
         $categorie->nom = $request->nom;
         if ($request->hasFile('image')) {
-            $request->image->delete(public_path('web/images/categories'), $request->image);
-            $imageName = time() . '.' . $request->image->extension();
-            $request->image->move(public_path('web/images/categories'), $imageName);
-            $categorie->image = $imageName;
+            Storage::delete('public/' . $categorie->image);
+            $path = Storage::putFile('public/categories', $request->file('image'));
+            $categorie->image = Str::substr($path, 7);
         }
         $categorie->save();
         $message = 'les modifications ont été enregistrées avec succès';
         return redirect()->route('categories')->with('success', $message);
     }
 
-    public function show(int $id){
-       $categorie = Categorie::findOrFail($id) ;
-       $scategories = $categorie->enfants()->get() ;
-       $grand_titre = $categorie->nom.' catégories' ;
-       return view('office.sous_categories.index',compact('scategories','grand_titre','categorie')) ;
+    public function show(int $id)
+    {
+        $categorie = Categorie::findOrFail($id);
+        $scategories = $categorie->enfants()->get();
+        $grand_titre = $categorie->nom . ' catégories';
+        return view('office.sous_categories.index', compact('scategories', 'grand_titre', 'categorie'));
     }
 
     public function delete(int $id)
     {
         $categorie = Categorie::findOrFail($id);
         if (!empty($categorie->image)) {
-            File::delete('web/images/categories/' . $categorie->image);
+            Storage::delete('public/' . $categorie->image);
         }
-        $categorie->delete() ;
+        $categorie->delete();
         $message = 'la categorie ' . $categorie->nom . ' a été suprimée avec succès';
         return redirect()->route('categories')->with('success', $message);
     }

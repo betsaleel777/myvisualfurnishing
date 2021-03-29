@@ -47,8 +47,12 @@
                         <div class="form-group">
                            <a href="#" class="avatar avatar-lg rounded-circle" data-toggle="tooltip"
                               data-original-title="{{ $categorie->nom }}">
-                              <img alt="{{ $categorie->nom }}"
-                                 src="{{ asset('web/images/categories') . '/' . $categorie->image }}">
+                              @if (!empty($categorie->image))
+                                 <img alt="{{ $categorie->nom }}"
+                                    src="{{ asset('/storage') . '/' . $categorie->image }}">
+                              @else
+                                 <img alt="{{ $categorie->nom }}" src="{{ asset('/storage/default/default.png') }}">
+                              @endif
                            </a>
                         </div>
                      </div>
@@ -56,8 +60,9 @@
                         <div class="form-group">
                            <div class="custom-file">
                               <label class="custom-file-label" for="customFileLang">Image</label>
-                              <input name="logo" type="file" class="custom-file-input @error('image') is-invalid @enderror"
-                                 id="customFileLang" lang="fr">
+                              <input name="image" type="file"
+                                 class="custom-file-input @error('image') is-invalid @enderror" id="customFileLang"
+                                 lang="fr">
                               @error('image')
                                  <div class="text-danger">{{ $message }}</div>
                               @enderror

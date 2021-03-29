@@ -66,7 +66,7 @@
                                        @empty($categorie->image)
                                           <a href="#" class="avatar rounded-circle mr-3">
                                              <img alt="{{ $categorie->nom }}"
-                                                src="{{ asset('web/images/categories/default.png') }}">
+                                                src="{{ asset('/storage/default/default.png') }}">
                                           </a>
                                           <div class="media-body">
                                              <span class="name mb-0 text-sm">{{ $categorie->nom }}</span>
@@ -74,7 +74,7 @@
                                        @else
                                           <a href="#" class="avatar rounded-circle mr-3">
                                              <img alt="{{ $categorie->nom }}"
-                                                src="{{ asset('web/images/categories') . '/' . $categorie->image }}">
+                                                src="{{ url('/storage') . '/' . $categorie->image }}">
                                           </a>
                                           <div class="media-body">
                                              <span class="name mb-0 text-sm">{{ $categorie->nom }}</span>

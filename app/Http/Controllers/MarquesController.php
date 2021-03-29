@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Marque;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class MarquesController extends Controller
 {
@@ -28,16 +29,15 @@ class MarquesController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->validate(Marque::RULES);
+        $request->validate(Marque::RULES);
         $marque = new Marque();
         $marque->nom = $request->nom;
         if ($request->hasFile('logo')) {
-            $imageName = time() . '.' . $request->logo->extension();
-            $request->logo->move(public_path('web/images/marques'), $imageName);
-            $marque->logo = $imageName;
+            $path = Storage::putFile('public/marques', $request->file('logo'));
+            $marque->logo = Str::substr($path, 7);
         }
         $marque->save();
-        $message = 'la marque ' . $request->nom . 'a été enregistré avec succès';
+        $message = 'la marque ' . $request->nom . 'a été enregistrée avec succès';
         return redirect()->route('marques')->with('success', $message);
     }
 
@@ -50,14 +50,13 @@ class MarquesController extends Controller
 
     public function update(Request $request)
     {
-        $data = $request->validate(Marque::RULES);
+        $request->validate(Marque::RULES);
         $marque = Marque::findOrFail($request->marque);
         $marque->nom = $request->nom;
         if ($request->hasFile('logo')) {
-            $request->logo->delete(public_path('web/images/marques'), $request->logo);
-            $imageName = time() . '.' . $request->logo->extension();
-            $request->logo->move(public_path('web/images/marques'), $imageName);
-            $marque->logo = $imageName;
+            Storage::delete('public/' . $marque->logo);
+            $path = Storage::putFile('public/marques', $request->file('logo'));
+            $marque->logo = Str::substr($path, 7);
         }
         $marque->save();
         $message = 'les modifications ont été enregistrées avec succès';
@@ -68,9 +67,9 @@ class MarquesController extends Controller
     {
         $marque = Marque::findOrFail($id);
         if (!empty($marque->logo)) {
-            File::delete('web/images/marques/' . $marque->logo);
+            Storage::delete('public/' . $marque->logo);
         }
-        $marque->delete() ;
+        $marque->delete();
         $message = 'la marque ' . $marque->nom . ' a été suprimée avec succès';
         return redirect()->route('marques')->with('success', $message);
     }
